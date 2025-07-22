@@ -13,6 +13,9 @@ const port = process.env.PORT
 app.set('views', './views')
 app.set('view engine', 'pug')
 
+//khai bao static
+app.use(express.static(__dirname + '/public'))
+
 //Routes
 route(app)
 
